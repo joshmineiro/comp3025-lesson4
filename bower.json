@@ -1,0 +1,29 @@
+{
+  "name": "comp3025-lesson4",
+  "homepage": "https://github.com/joshmineiro/comp3025-lesson4",
+  "authors": [
+    "joshmineiro <joshmineiro@gmail.com>"
+  ],
+  "description": "TypeScript Demo with CreateJS",
+  "main": "index.html",
+  "keywords": [
+    "JavaScript",
+    "TypeScript",
+    "CreateJS"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Scripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "EaselJS": "^0.8.2",
+    "TweenJS": "^0.6.2",
+    "SoundJS": "^0.6.2",
+    "PreloadJS": "^0.6.2"
+  }
+}

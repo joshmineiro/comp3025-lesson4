@@ -13,7 +13,7 @@ var objects;
     var Label = (function (_super) {
         __extends(Label, _super);
         //CONSTRUCTOR ++++++++++++++++++++++++++++++
-        function Label(LabelString, fontFamily, fontColour, centred, x, y) {
+        function Label(LabelString, fontFamily, fontColour, x, y, centred) {
             var _this = _super.call(this, LabelString, fontFamily, fontColour) || this;
             _this.LabelString = LabelString;
             _this.fontFamily = fontFamily;

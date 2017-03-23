@@ -3,8 +3,8 @@ module objects {
     {
         //CONSTRUCTOR ++++++++++++++++++++++++++++++
         constructor(public LabelString:string, public fontFamily:string,
-                    public fontColour:string, public centred:boolean,
-                    x:number, y: number){
+                    public fontColour:string,
+                    x:number, y: number, public centred:boolean){
             super(LabelString, fontFamily, fontColour);
             this.Start();
             this.x = x;

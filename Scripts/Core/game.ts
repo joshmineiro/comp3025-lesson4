@@ -1,4 +1,5 @@
 /* core game script */
+/// <reference path="./_reference.ts"/>
 
 //IIFE - Immediately Invoked Function Expression
 
@@ -8,7 +9,7 @@ let canvas: HTMLElement;
 let stage: createjs.Stage;
 
 //Game variables
-let helloLabel: createjs.Text;
+let helloLabel:objects.Label
 
 function Start(): void{
     canvas = document.getElementById("canvas"); //get reference to canvas element
@@ -29,11 +30,7 @@ function Update(event:createjs.Event):void{
 function Game():void{
     console.log("Game started...")
 
-    helloLabel = new createjs.Text("Hello world!", "40px Consolas", "#000000");
-    helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
-    helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
-    helloLabel.x = 160;
-    helloLabel.y = 240;
+    helloLabel = new objects.Label("Hello world!", "40px Consolas", "#000000", true, 160, 240);
     stage.addChild(helloLabel);
 }
 
